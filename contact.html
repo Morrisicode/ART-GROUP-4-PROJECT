@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cloudflare.com">
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <div class="logo"><img src="images/logo.png" alt=""></div>
+
+           <div class="navlinks">
+             <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+           </div>
+        </div>
+    </div>
+
+    <section class="contact-us">
+        <div class="container">
+            <h1>Want to hear from us?</h1>
+            <p>we are just a dm away.</p>
+
+            <form action="" id="contactForm">
+               <img src="images/logo.png" alt=""> <h3>Send Us a Message</h3>
+
+                <div>
+                    <label for="name">Full Name:</label>
+                    <input type="text" placeholder="your full name here..." required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" placeholder="your email here..." required>
+                </div>
+                <div>
+                    <label for="name">Phone Number:</label>
+                    <input type="number" placeholder="your phone information...">
+                </div>
+                <div>
+                    <label for="name">Subject:</label>
+                    <input type="text" placeholder="What your message entails...">
+                </div>
+
+                <div>
+                    <label for="message">Message</label>
+                    <textarea name="" id="" placeholder="write your message here"></textarea>
+                </div>
+
+                <button type="submit" class="contactBtn" id="openPopup">Send Message</button>
+            </form>
+            
+        </div>
+    </section>
+
+   <!-- POPUP -->
+<div class="popup" id="popup">
+
+    <div class="popup-content">
+        <h2>Confirm Submission</h2>
+
+        <p>
+            Are you sure you want to submit this form?
+        </p>
+
+        <div class="popup-buttons">
+            <button id="confirmBtn">
+                Confirm
+            </button>
+
+            <button id="cancelBtn">
+                Cancel
+            </button>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+     
+       <footer>
+            <div class="container">
+                <div>
+                    <h3><i class="fa-solid fa-link"></i> Quick Links</h3>
+                        <a href="index.html">Home</a>
+                        <a href="index.html">About</a>
+                        <a href="index.html">Contact </a>
+                </div>
+
+                <div>
+                    <h3><i class="fa-solid fa-location-dot"></i>
+                        </h3>
+                    <p>Pipeline Road, Paynesville <br>Montserrado County, Liberia</p>
+                </div>
+
+                <div>
+                    <h3><i class="fa-solid fa-link"></i>   Socials</h3>
+                    <ul>
+                        <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fa-solid fa-phone"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+                    </ul>
+
+                      
+
+                       
+                </div>
+                
+            </div>
+            <p>Copyright &copy; <span id="year"></span> gracelandprivateschool All Rights Reserved<script>
+
+                document.getElementById('year').innerHTML = new Date().getFullYear()
+
+            </script></p>
+       </footer>
+    
+    <script src="script.js"></script>
+    <script src="https://cloudflare.com"></script>
+</body>
+</html>

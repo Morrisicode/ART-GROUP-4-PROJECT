@@ -1,0 +1,66 @@
+
+
+@media(max-width:768px){
+    header .container a{
+        display: block;
+        margin: 15px auto;
+    }
+}
+
+.carousal img{
+    width: 100%;
+}
+
+.showcase .container{
+    display: flex;
+  flex-wrap: wrap;
+    
+}
+
+.mission .container{
+    display: flex;
+    flex-wrap: wrap;
+    width:  auto 90%;
+}
+.mission h1{
+    font-size: 2rem;
+}
+
+.mission{
+    margin-top: -40px;
+}
+
+footer .container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.discuss .container{
+    display: flex;
+    flex-direction: column;
+    padding-top: -10px;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.discuss .container div{
+    width: 100%;
+}
+
+
+
+.team .container .card{
+    width: 90%;
+
+}
+
+
+form{
+    width: 90%;
+}
+
+form p{
+    font-size: 2rem;
+}
