@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+/>
+<link rel="stylesheet" href="responsive.css">
+<link rel="stylesheet" href="https://cloudflare.com">
+
+    <title>Home</title>
+</head>
+<body >
+
+    <div class="navbar">
+        <div class="container">
+            <div class="logo"><img src="images/logo.png" alt=""></div>
+
+           <div class="navlinks">
+             <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+           </div>
+        </div>
+    </div>
+
+
+    <!-- Header Section -->
+
+    <header>
+        <div class="container ">
+            <div>
+                <h1 class="hero-title">Empowering Future Leaders Through Quality Education</h1>
+                <p class="hero-text">Welcome to GraceLand Private School — where knowledge, discipline, and innovation shape tomorrow’s leaders.</p>
+            </div>
+            <a href="about.html" class="readmoreBtn hero-btn">Read More</a> 
+            <a href="contact.html" class="contactBtn hero-btn">Contact Us</a>
+        </div>
+    </header>
+
+
+    <!-- Showcase -->
+     <section class="carousal image-reveal">
+        <div class="">
+            <div class="slider">
+  <div class="slide-track">
+
+    <img src="images/banner1.png" alt="">
+    <img src="images/banner2.png" alt="">
+    <img src="images/banner3.png" alt="">
+    <img src="images/banner4.png" alt="">
+
+    <!-- Duplicate images for smooth infinite effect -->
+    <img src="images/banner1.png" alt="">
+    <img src="images/banner2.png" alt="">
+    <img src="images/banner3.png" alt="">
+    <img src="images/banner4.png" alt="">
+
+  </div>
+</div>
+
+        </div>
+     </section>
+
+     <!-- showcase -->
+      <section class="showcase " >
+        <h1 class="image-reveal">Who We Are</h1>
+        <div class="container">
+
+            
+
+            <div class="text-left">
+                <h3 class="">What are We</h3>
+                <p>Graceland Private School is a center of excellence dedicated to providing high-quality education for students at all levels. Our goal is to nurture creativity, critical thinking, and leadership skills in every student.</p> 
+
+                <p>With experienced teachers, modern facilities, and a supportive learning environment, we prepare students to succeed academically and in life.
+                    We prepare students to succeed academically and in life
+                    
+                    
+                </p>
+               
+
+            </div>
+             <img src="images/about page banner.png" class="image-reveal">
+            
+        </div>
+      </section>
+
+      <section class="counter-section ">
+            <div class="counter-box text-right">
+                <h1 class="counter" data-target="1250">0</h1>
+                <p>Total Students</p>
+            </div>
+
+            <div class="counter-box text-right">
+                <h1 class="counter" data-target="35">0</h1>
+                <p>Teachers</p>
+            </div>
+
+            <div class="counter-box text-right">
+                <h1 class="counter" data-target="20">0</h1>
+                <p>Classrooms</p>
+            </div>
+        </section>
+
+      <!-- Mission and Vision -->
+       <section class="mission">
+        <h1 class="blur-fade"">Mission and Vision</h1>
+        <div class="container">
+            <div class="text-right"
+                <h3>Mission</h3>
+                <p>To provide quality education that empowers students with knowledge, skills, and values needed to succeed in a changing world.</p>
+            </div>
+
+            <div class="text-right">
+                <h3>Vision</h3>
+                <p>To become a leading institution recognized for academic excellence and character development.</p>
+            </div>
+
+            <div class="text-right">
+                <h3>Core Values</h3>
+                <p>
+                    
+                o become a leading institution recognized for academic excellence and character development.
+            </p>
+            </div>
+
+        </div>
+       </section>
+
+       <!-- Footer -->
+
+       <footer>
+            <div class="container card-animation">
+                <div>
+                    <h3><i class="fa-solid fa-link"></i> Quick Links</h3>
+                        <a href="index.html">Home</a>
+                        <a href="index.html">About</a>
+                        <a href="index.html">Contact </a>
+                </div>
+
+                <div>
+                    <h3><i class="fa-solid fa-location-dot"></i>
+                        </h3>
+                    <p>Pipeline Road, Paynesville <br>Montserrado County, Liberia</p>
+                </div>
+
+                <div>
+                    <h3><i class="fa-solid fa-link"></i>   Socials</h3>
+                    <ul>
+                        <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fa-solid fa-phone"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+                    </ul>
+
+                      
+
+                       
+                </div>
+                
+            </div>
+            <p>Copyright &copy; <span id="year"></span> gracelandprivateschool All Rights Reserved<script>
+
+                document.getElementById('year').innerHTML = new Date().getFullYear()
+
+            </script></p>
+       </footer>
+
+            
+                <script>
+            const counters = document.querySelectorAll('.counter');
+
+            const startCounter = (counter) => {
+                const target = +counter.getAttribute('data-target');
+                let count = 0;
+
+            const updateCounter = () => {
+                const increment = target / 100;
+
+                if(count < target){
+                    count += increment;
+                    counter.innerText = Math.ceil(count);
+                    setTimeout(updateCounter, 20);
+                } else {
+                    counter.innerText = target;
+                }
+                    };
+
+                    updateCounter();
+                };
+
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if(entry.isIntersecting){
+                            startCounter(entry.target);
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, {
+                    threshold: 0.5
+                });
+
+                counters.forEach(counter => {
+                    observer.observe(counter);
+                });
+        </script>
+        <script src="https://cloudflare.com"></script>
+        <script src="animate.js"></script>
+
+    
+    
+</body>
+</html>
