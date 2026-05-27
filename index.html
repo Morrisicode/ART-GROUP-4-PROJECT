@@ -3,31 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GraceLand Private School</title>
+    <meta name="description" content="GraceLand Private School offers quality education, leadership development, and student success in Liberia.">
+    <meta name="keywords" content="GraceLand Private School, education, Liberia, students, school, learning">
+    <meta name="author" content="GraceLand Private School">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="GraceLand Private School">
+    <meta property="og:title" content="GraceLand Private School">
+    <meta property="og:description" content="GraceLand Private School offers quality education, leadership development, and student success in Liberia.">
     <link rel="stylesheet" href="style.css">
-    <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-/>
-<link rel="stylesheet" href="responsive.css">
-<link rel="stylesheet" href="https://cloudflare.com">
-
-    <title>Home</title>
 </head>
 <body >
 
-    <div class="navbar">
-        <div class="container">
-            <div class="logo"><img src="images/logo.png" alt=""></div>
-
-           <div class="navlinks">
-             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-           </div>
+      <nav class="navbar">
+      <div class="container">
+        <a class="logo" href="index.html"><img src="images/logo.png" alt="GraceLand Private School logo"></a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false" role="button" tabindex="0">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-    </div>
+      </div>
+    </nav>
 
 
     <!-- Header Section -->
@@ -35,31 +38,31 @@
     <header>
         <div class="container ">
             <div>
-                <h1>Empowering Future Leaders Through Quality Education</h1>
-                <p>Welcome to GraceLand Private School — where knowledge, discipline, and innovation shape tomorrow’s leaders.</p>
+                <h1 class="hero-title">Empowering Future Leaders Through Quality Education</h1>
+                <p class="hero-text">Welcome to GraceLand Private School — where knowledge, discipline, and innovation shape tomorrow’s leaders.</p>
             </div>
-            <a href="about.html" class="readmoreBtn">Read More</a> 
-            <a href="contact.html" class="contactBtn">Contact Us</a>
+            <a href="about.html" class="readmoreBtn hero-btn" >Read More</a> 
+            <a href="contact.html" class="contactBtn hero-btn">Contact Us</a>
         </div>
     </header>
 
 
     <!-- Showcase -->
-     <section class="carousal">
+     <section class="carousal image-reveal">
         <div class="">
             <div class="slider">
   <div class="slide-track">
 
-    <img src="images/banner1.png" alt="">
-    <img src="images/banner2.png" alt="">
-    <img src="images/banner3.png" alt="">
-    <img src="images/banner4.png" alt="">
+    <img src="images/banner1.png" alt="School campus exterior">
+    <img src="images/banner2.png" alt="Students learning in a classroom">
+    <img src="images/banner3.png" alt="School community at GraceLand Private School">
+    <img src="images/banner4.png" alt="School banner image">
 
     <!-- Duplicate images for smooth infinite effect -->
-    <img src="images/banner1.png" alt="">
-    <img src="images/banner2.png" alt="">
-    <img src="images/banner3.png" alt="">
-    <img src="images/banner4.png" alt="">
+    <img src="images/banner1.png" alt="School campus exterior">
+    <img src="images/banner2.png" alt="Students learning in a classroom">
+    <img src="images/banner3.png" alt="School community at GraceLand Private School">
+    <img src="images/banner4.png" alt="School banner image">
 
   </div>
 </div>
@@ -68,13 +71,13 @@
      </section>
 
      <!-- showcase -->
-      <section class="showcase" >
-        <h1>Who We Are</h1>
+      <section class="showcase image-reveal" >
+        <h1 class="blur-fade">Who We Are</h1>
         <div class="container">
 
             
 
-            <div>
+            <div class="">
                 <h3>What are We</h3>
                 <p>Graceland Private School is a center of excellence dedicated to providing high-quality education for students at all levels. Our goal is to nurture creativity, critical thinking, and leadership skills in every student.</p> 
 
@@ -86,23 +89,23 @@
                
 
             </div>
-             <img src="images/about page banner.png" alt="">
+             <img src="images/about page banner.png" alt="" class="">
             
         </div>
       </section>
 
       <section class="counter-section">
-            <div class="counter-box">
+            <div class="counter-box text-left">
                 <h1 class="counter" data-target="1250">0</h1>
                 <p>Total Students</p>
             </div>
 
-            <div class="counter-box">
+            <div class="counter-box hero-text">
                 <h1 class="counter" data-target="35">0</h1>
                 <p>Teachers</p>
             </div>
 
-            <div class="counter-box">
+            <div class="counter-box text-left">
                 <h1 class="counter" data-target="20">0</h1>
                 <p>Classrooms</p>
             </div>
@@ -110,19 +113,19 @@
 
       <!-- Mission and Vision -->
        <section class="mission">
-        <h1>Mission and Vision</h1>
+        <h1 class="blur-fade">Mission and Vision</h1>
         <div class="container">
-            <div>
+            <div class="card-animation">
                 <h3>Mission</h3>
                 <p>To provide quality education that empowers students with knowledge, skills, and values needed to succeed in a changing world.</p>
             </div>
 
-            <div>
+            <div class="card-animation">
                 <h3>Vision</h3>
                 <p>To become a leading institution recognized for academic excellence and character development.</p>
             </div>
 
-            <div>
+            <div class="card-animation">
                 <h3>Core Values</h3>
                 <p>
                     
@@ -136,7 +139,7 @@
        <!-- Footer -->
 
        <footer>
-            <div class="container">
+            <div class="container card-animation">
                 <div>
                     <h3><i class="fa-solid fa-link"></i> Quick Links</h3>
                         <a href="index.html">Home</a>
@@ -174,7 +177,7 @@
 
             
                 <script>
-            const counters = document.querySelectorAll('.counter');
+       const counters = document.querySelectorAll('.counter');
 
             const startCounter = (counter) => {
                 const target = +counter.getAttribute('data-target');
@@ -210,7 +213,9 @@
                     observer.observe(counter);
                 });
         </script>
-        <script src="https://cloudflare.com"></script>
+        
+        <script src="animate.js"></script>
+       <script src="script.js" defer></script>
 
     
     
